@@ -1,0 +1,13 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.BeautyHealth>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+<div>
+    @Model.Value("title")
+</div>
+
+<div><img src="@Model.Image.Url()"></div>
+
+<div>@Model.Value("content")</div>
